@@ -1,0 +1,1536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>TrendyNews – The World in Headlines</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@100;600;800&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar start -->
+        <div class="container-fluid sticky-top px-0">
+            <div class="container-fluid topbar bg-dark d-none d-lg-block">
+                <div class="container px-0">
+                    <div class="topbar-top d-flex justify-content-between flex-lg-wrap">
+                        <div class="top-info flex-grow-0">
+                            <span class="rounded-circle btn-sm-square bg-primary me-2">
+                                <i class="fas fa-bolt text-white"></i>
+                            </span>
+                            <div class="pe-2 me-3 border-end border-white d-flex align-items-center">
+                                <p class="mb-0 text-white fs-6 fw-normal">Trending</p>
+                            </div>
+                            <div class="overflow-hidden" style="width: 735px;">
+                                <div id="note" class="ps-2">
+                                    <img src="img/features-fashion.jpg" class="img-fluid rounded-circle border border-3 border-primary me-2" style="width: 30px; height: 30px;" alt="">
+                                    <a href="#"><p class="text-white mb-0 link-hover">Breaking News :Stay Updated, Stay Ahead.</p></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="top-link flex-lg-wrap">
+                            <i class="fas fa-calendar-alt text-white border-end border-secondary pe-2 me-2"> <span class="text-body">Tuesday, Sep 12, 2024</span></i>
+                            <div class="d-flex icon">
+                                <p class="mb-0 text-white me-2">Follow Us:</p>
+                                <a href="" class="me-2"><i class="fab fa-facebook-f text-body link-hover"></i></a>
+                                <a href="" class="me-2"><i class="fab fa-twitter text-body link-hover"></i></a>
+                                <a href="" class="me-2"><i class="fab fa-instagram text-body link-hover"></i></a>
+                                <a href="" class="me-2"><i class="fab fa-youtube text-body link-hover"></i></a>
+                                <a href="" class="me-2"><i class="fab fa-linkedin-in text-body link-hover"></i></a>
+                                <a href="" class="me-2"><i class="fab fa-skype text-body link-hover"></i></a>
+                                <a href="" class=""><i class="fab fa-pinterest-p text-body link-hover"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid bg-light">
+                <div class="container px-0">
+                    <nav class="navbar navbar-light navbar-expand-xl">
+                        <a href="index.html" class="navbar-brand mt-3">
+                            <p class="text-primary display-6 mb-2" style="line-height: 0;">NewsWave</p>
+                            <small class="text-body fw-normal" style="letter-spacing: 12px;">Newspaper</small>
+                        </a>
+                        <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                            <span class="fa fa-bars text-primary"></span>
+                        </button>
+                        <div class="collapse navbar-collapse bg-light py-3" id="navbarCollapse">
+                            <div class="navbar-nav mx-auto border-top">
+                                <a href="index.html" class="nav-item nav-link active">Home</a>
+                                <a href="detail-page.html" class="nav-item nav-link">Detail  Page</a>
+                                <a href="404.html" class="nav-item nav-link">404 Page</a>
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">News</a>
+                                    <div class="dropdown-menu m-0 bg-secondary rounded-0">
+                                        <a href="#" class="dropdown-item">Sports</a>
+                                        <a href="#" class="dropdown-item">Education</a>
+                                        <a href="#" class="dropdown-item">Politics</a>
+                                        <a href="#" class="dropdown-item">Bussiness</a>
+                                    </div>
+                                </div>
+                                <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                            </div>
+                            <div class="d-flex flex-nowrap border-top pt-3 pt-xl-0">
+                                <div class="d-flex">
+                                    <img src="img/weather-icon.png" class="img-fluid w-100 me-2" alt="">
+                                    <div class="d-flex align-items-center">
+                                        <strong class="fs-4 text-secondary">31°C</strong>
+                                        <div class="d-flex flex-column ms-2" style="width: 150px;">
+                                            <span class="text-body">hyderabad,</span>
+                                            <small>Mon. 10 dec 2024</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn-search btn border border-primary btn-md-square rounded-circle bg-white my-auto" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search text-primary"></i></button>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar End -->
+
+
+        <!-- Modal Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center">
+                        <div class="input-group w-75 mx-auto d-flex">
+                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Search End -->
+
+
+        <!-- Features Start -->
+        <div class="container-fluid features mb-5">
+            <div class="container py-5">
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="row g-4 align-items-center features-item">
+                            <div class="col-4">
+                                <div class="rounded-circle position-relative">
+                                    <div class="overflow-hidden rounded-circle">
+                                        <img src="img/features-sports-1.jpg" class="img-zoomin img-fluid rounded-circle w-100" alt="">
+                                    </div>
+                                    <span class="rounded-circle border border-2 border-white bg-primary btn-sm-square text-white position-absolute" style="top: 10%; right: -10px;">3</span>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="features-content d-flex flex-column">
+                                    <p class="text-uppercase mb-2">Sports</p>
+                                    <a href="#" class="h6">
+                                        Thrilling Moments in Sports
+                                    </a>
+                                    <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> December 9, 2024</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="row g-4 align-items-center features-item">
+                            <div class="col-4">
+                                <div class="rounded-circle position-relative">
+                                    <div class="overflow-hidden rounded-circle">
+                                        <img src="img/features-technology.jpg" class="img-zoomin img-fluid rounded-circle w-100" alt="">
+                                    </div>
+                                    <span class="rounded-circle border border-2 border-white bg-primary btn-sm-square text-white position-absolute" style="top: 10%; right: -10px;">3</span>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="features-content d-flex flex-column">
+                                    <p class="text-uppercase mb-2">Technology</p>
+                                    <a href="#" class="h6">
+                                        Technology Shaping Our Future
+                                    </a>
+                                    <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> December 20, 2024</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="row g-4 align-items-center features-item">
+                            <div class="col-4">
+                                <div class="rounded-circle position-relative">
+                                    <div class="overflow-hidden rounded-circle">
+                                        <img src="img/features-fashion.jpg" class="img-zoomin img-fluid rounded-circle w-100" alt="">
+                                    </div>
+                                    <span class="rounded-circle border border-2 border-white bg-primary btn-sm-square text-white position-absolute" style="top: 10%; right: -10px;">3</span>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="features-content d-flex flex-column">
+                                    <p class="text-uppercase mb-2">Fashion</p>
+                                    <a href="#" class="h6">
+                                        Fashion Trends Redefining Style.
+                                    </a>
+                                    <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Jan 9, 2025</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="row g-4 align-items-center features-item">
+                            <div class="col-4">
+                                <div class="rounded-circle position-relative">
+                                    <div class="overflow-hidden rounded-circle">
+                                        <img src="img/features-life-style.jpg" class="img-zoomin img-fluid rounded-circle w-100" alt="">
+                                    </div>
+                                    <span class="rounded-circle border border-2 border-white bg-primary btn-sm-square text-white position-absolute" style="top: 10%; right: -10px;">3</span>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="features-content d-flex flex-column">
+                                    <p class="text-uppercase mb-2">Life Style</p>
+                                    <a href="#" class="h6">
+                                        Healthy Lifestyle for All.
+                                    </a>
+                                    <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Feb 2, 2025</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Features End -->
+
+
+        <!-- Main Post Section Start -->
+        <div class="container-fluid py-5">
+            <div class="container py-5">
+                <div class="row g-4">
+                    <div class="col-lg-7 col-xl-8 mt-0">
+                        <div class="position-relative overflow-hidden rounded">
+                            <img src="img/news-1.jpg" class="img-fluid rounded img-zoomin w-100" alt="">
+                            <div class="d-flex justify-content-center px-4 position-absolute flex-wrap" style="bottom: 10px; left: 0;">
+                                <a href="#" class="text-white me-3 link-hover"><i class="fa fa-clock"></i> 06 minute read</a>
+                                <a href="#" class="text-white me-3 link-hover"><i class="fa fa-eye"></i> 3.5k Views</a>
+                                <a href="#" class="text-white me-3 link-hover"><i class="fa fa-comment-dots"></i> 05 Comment</a>
+                                <a href="#" class="text-white link-hover"><i class="fa fa-arrow-up"></i> 1.5k Share</a>
+                            </div>
+                        </div>
+                        <div class="border-bottom py-3">
+                            <a href="#" class="display-4 text-dark mb-0 link-hover">Booming Job Opportunities in the IT Industry</a>
+                        </div>
+                        <p class="mt-3 mb-4">The IT industry is witnessing a massive surge in job opportunities as companies worldwide embrace digital transformation. Roles such as software developers, cybersecurity analysts, AI engineers, cloud architects, and data scientists are in high demand, with businesses investing heavily in cutting-edge technologies. The rise of remote work and freelancing has further expanded job prospects, allowing professionals to work from anywhere. Tech giants and startups alike are offering competitive salaries, skill-based hiring, and career growth opportunities. With advancements in AI, blockchain, and automation, the industry continues to evolve, making IT one of the most promising career fields today.
+                        </p>
+                        <div class="bg-light p-4 rounded">
+                            <div class="news-2">
+                                <h3 class="mb-4">Top Story</h3>
+                            </div>
+                            <div class="row g-4 align-items-center">
+                                <div class="col-md-6">
+                                    <div class="rounded overflow-hidden">
+                                        <img src="img/news-2.jpg" class="img-fluid rounded img-zoomin w-100" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex flex-column">
+                                        <a href="#" class="h3">Stoneman Clandestine Ukrainian claims successes against Russian.</a>
+                                        <p class="mb-0 fs-5"><i class="fa fa-clock"> 06 minute read</i> </p>
+                                        <p class="mb-0 fs-5"><i class="fa fa-eye"> 3.5k Views</i></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-xl-4">
+                       <div class="bg-light rounded p-4 pt-0">
+                            <div class="row g-4">
+                                <div class="col-12">
+                                    <div class="rounded overflow-hidden">
+                                        <img src="img/news-3.jpg" class="img-fluid rounded img-zoomin w-100" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="d-flex flex-column">
+                                        <a href="#" class="h4 mb-2">How to apply for internships .</a>
+                                        <p class="fs-5 mb-0"><i class="fa fa-clock"> 06 minute read</i> </p>
+                                        <p class="fs-5 mb-0"><i class="fa fa-eye"> 3.5k Views</i></p>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row g-4 align-items-center">
+                                        <div class="col-5">
+                                            <div class="overflow-hidden rounded">
+                                                <img src="img/news-3.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="features-content d-flex flex-column">
+                                                <a href="#" class="h6">How to apply for internships.</a>
+                                                <small><i class="fa fa-clock"> 06 minute read</i> </small>
+                                                <small><i class="fa fa-eye"> 3.5k Views</i></small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row g-4 align-items-center">
+                                        <div class="col-5">
+                                            <div class="overflow-hidden rounded">
+                                                <img src="img/news-4.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="features-content d-flex flex-column">
+                                                <a href="#" class="h6">Wind Mills:Harnessing Clean Energy for a Sustainable Future!.</a>
+                                                <small><i class="fa fa-clock"> 06 minute read</i> </small>
+                                                <small><i class="fa fa-eye"> 3.5k Views</i></small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row g-4 align-items-center">
+                                        <div class="col-5">
+                                            <div class="overflow-hidden rounded">
+                                                <img src="img/news-5.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="features-content d-flex flex-column">
+                                                <a href="#" class="h6">Ancient Sculptures: Timeless Art Carved in Stone!.</a>
+                                                <small><i class="fa fa-clock"> 06 minute read</i> </small>
+                                                <small><i class="fa fa-eye"> 3.5k Views</i></small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row g-4 align-items-center">
+                                        <div class="col-5">
+                                            <div class="overflow-hidden rounded">
+                                                <img src="img/news-6.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="features-content d-flex flex-column">
+                                                <a href="#" class="h6">Statue of Liberty: A Symbol of Freedom and Hope!.</a>
+                                                <small><i class="fa fa-clock"> 06 minute read</i> </small>
+                                                <small><i class="fa fa-eye"> 3.5k Views</i></small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row g-4 align-items-center">
+                                        <div class="col-5">
+                                            <div class="overflow-hidden rounded">
+                                                <img src="img/news-7.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="features-content d-flex flex-column">
+                                                <a href="#" class="h6">Revolutionizing Mobility: The Future of Automobiles is Here!.</a>
+                                                <small><i class="fa fa-clock"> 06 minute read</i> </small>
+                                                <small><i class="fa fa-eye"> 3.5k Views</i></small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row g-4 align-items-center">
+                                        <div class="col-5">
+                                            <div class="overflow-hidden rounded">
+                                                <img src="img/news-7.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="features-content d-flex flex-column">
+                                                <a href="#" class="h6">From Fuel to Electric: The Evolution of the Automobile Industry.</a>
+                                                <small><i class="fa fa-clock"> 06 minute read</i> </small>
+                                                <small><i class="fa fa-eye"> 3.5k Views</i></small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main Post Section End -->
+
+
+        <!-- Banner Start -->
+        <div class="container-fluid py-5 my-5" style="background: linear-gradient(rgba(202, 203, 185, 1), rgba(202, 203, 185, 1));">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-lg-7">
+                        <h1 class="mb-4 text-primary">NewsWave</h1>
+                        <h1 class="mb-4">Get Every Weekly Updates</h1>
+                        <p class="text-dark mb-4 pb-2">Get every update in real-time with just one click on our website! Stay informed about the latest news, trends, and breaking stories, all at your fingertips. Whether it’s politics, sports, technology, entertainment, or world affairs, we bring you instant updates, anytime, anywhere. Don't miss out—stay ahead and stay informed with our seamless and fast news experience! 
+                        </p>
+                        <div class="position-relative mx-auto">
+                            <input class="form-control w-100 py-3 rounded-pill" type="email" placeholder="Your Busines Email">
+                            <button type="submit" class="btn btn-primary py-3 px-5 position-absolute rounded-pill text-white h-100" style="top: 0; right: 0;">Subscribe Now</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="rounded">
+                            <img src="img/banner-img.jpg" class="img-fluid rounded w-100 rounded" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Banner End -->
+
+
+        <!-- Latest News Start -->
+        <div class="container-fluid latest-news py-5">
+            <div class="container py-5">
+                <h2 class="mb-4">Latest News</h2>
+                <div class="latest-news-carousel owl-carousel">
+                    <div class="latest-news-item">
+                        <div class="bg-light rounded">
+                            <div class="rounded-top overflow-hidden">
+                                <img src="img/news-7.jpg" class="img-zoomin img-fluid rounded-top w-100" alt="">
+                            </div>
+                            <div class="d-flex flex-column p-4">
+                                <a href="#" class="h4">How to Apply for Internships...</a>
+                                <div class="d-flex justify-content-between">
+                                    <a href="#" class="small text-body link-hover">by Willum Skeem</a>
+                                    <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i>march 9, 2025</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="latest-news-item">
+                        <div class="bg-light rounded">
+                            <div class="rounded-top overflow-hidden">
+                                <img src="img/news-6.jpg" class="img-zoomin img-fluid rounded-top w-100" alt="">
+                            </div>
+                            <div class="d-flex flex-column p-4">
+                                <a href="#" class="h4">Statue ofLiberty:A Symbol of Freedom & Hope..</a>
+                                <div class="d-flex justify-content-between">
+                                    <a href="#" class="small text-body link-hover">by Narender shake</a>
+                                    <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> mar 2, 2025</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="latest-news-item">
+                        <div class="bg-light rounded">
+                            <div class="rounded-top overflow-hidden">
+                                <img src="img/news-3.jpg" class="img-zoomin img-fluid rounded-top w-100" alt="">
+                            </div>
+                            <div class="d-flex flex-column p-4">
+                                <a href="#" class="h4">Internet: What is the use of Internet...</a>
+                                <div class="d-flex justify-content-between">
+                                    <a href="#" class="small text-body link-hover">by Balaji Chukka</a>
+                                    <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 19, 2024</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="latest-news-item">
+                        <div class="bg-light rounded">
+                            <div class="rounded-top overflow-hidden">
+                                <img src="img/news-4.jpg" class="img-zoomin img-fluid rounded-top w-100" alt="">
+                            </div>
+                            <div class="d-flex flex-column p-4">
+                                <a href="#" class="h4">Harnessing Clean Energy for a Sustainable Future...</a>
+                                <div class="d-flex justify-content-between">
+                                    <a href="#" class="small text-body link-hover">by sony alex</a>
+                                    <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="latest-news-item">
+                        <div class="bg-light rounded">
+                            <div class="rounded-top overflow-hidden">
+                                <img src="img/news-5.jpg" class="img-zoomin img-fluid rounded-top w-100" alt="">
+                            </div>
+                            <div class="d-flex flex-column p-4">
+                                <a href="#" class="h4 ">Ancient Sculptures: Timeless Art Carved in Stone!...</a>
+                                <div class="d-flex justify-content-between">
+                                    <a href="#" class="small text-body link-hover">by Vaishnavi </a>
+                                    <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> sept 9, 2024</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Latest News End -->
+
+
+        <!-- Most Populer News Start -->
+        <div class="container-fluid populer-news py-5">
+            <div class="container py-5">
+                <div class="tab-class mb-4">
+                    <div class="row g-4">
+                        <div class="col-lg-8 col-xl-9">
+                            <div class="d-flex flex-column flex-md-row justify-content-md-between border-bottom mb-4">
+                                <h1 class="mb-4">What’s New</h1>
+                                <ul class="nav nav-pills d-inline-flex text-center">
+                                    <li class="nav-item mb-3">
+                                        <a class="d-flex py-2 bg-light rounded-pill active me-2" data-bs-toggle="pill" href="#tab-1">
+                                            <span class="text-dark" style="width: 100px;">Sports</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item mb-3">
+                                        <a class="d-flex py-2 bg-light rounded-pill me-2" data-bs-toggle="pill" href="#tab-2">
+                                            <span class="text-dark" style="width: 100px;">Magazine</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item mb-3">
+                                        <a class="d-flex py-2 bg-light rounded-pill me-2" data-bs-toggle="pill" href="#tab-3">
+                                            <span class="text-dark" style="width: 100px;">Politics</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item mb-3">
+                                        <a class="d-flex py-2 bg-light rounded-pill me-2" data-bs-toggle="pill" href="#tab-4">
+                                            <span class="text-dark" style="width: 100px;">Technology</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item mb-3">
+                                        <a class="d-flex py-2 bg-light rounded-pill me-2" data-bs-toggle="pill" href="#tab-5">
+                                            <span class="text-dark" style="width: 100px;">Fashion</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-content mb-4">
+                                <div id="tab-1" class="tab-pane fade show p-0 active">
+                                    <div class="row g-4">
+                                        <div class="col-lg-8">
+                                            <div class="position-relative rounded overflow-hidden">
+                                                <img src="img/sports-1.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                <div class="position-absolute text-white px-4 py-2 bg-primary rounded" style="top: 20px; right: 20px;">                                              
+                                                    Sports
+                                                </div>
+                                            </div>
+                                            <div class="my-4">
+                                                <a href="#" class="h4">Unstoppable Action: The Thrill of Sports Continues!.</a>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <a href="#" class="text-dark link-hover me-3"><i class="fa fa-clock"></i> 06 minute read</a>
+                                                <a href="#" class="text-dark link-hover me-3"><i class="fa fa-eye"></i> 3.5k Views</a>
+                                                <a href="#" class="text-dark link-hover me-3"><i class="fa fa-comment-dots"></i> 05 Comment</a>
+                                                <a href="#" class="text-dark link-hover"><i class="fa fa-arrow-up"></i> 1.5k Share</a>
+                                            </div>
+                                            <p class="my-4">Sports continue to captivate fans worldwide with intense competition, record-breaking performances, and unforgettable moments. From football and cricket to tennis and basketball, every game brings excitement, passion, and drama. Athletes push their limits, showcasing skill, strategy, and determination to achieve greatness. Major tournaments and leagues keep fans on the edge of their seats, uniting people across cultures through the love of the game. With advancements in technology, sports coverage has become more immersive, bringing fans closer to the action than ever before. Whether it's a last-minute goal, a game-changing shot, or a historic victory, sports never fail to inspire and entertain!
+                                            </p>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="row g-4">
+                                                <div class="col-12">
+                                                    <div class="row g-4 align-items-center">
+                                                        <div class="col-5">
+                                                            <div class="overflow-hidden rounded">
+                                                                <img src="img/sports-2.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <div class="features-content d-flex flex-column">
+                                                                <p class="text-uppercase mb-2">Cricket</p>
+                                                                <a href="#" class="h6">Last-Ball Thriller! Team Seals Victory in Nail-Biting Finish.</a>
+                                                                <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="row g-4 align-items-center">
+                                                        <div class="col-5">
+                                                            <div class="overflow-hidden rounded">
+                                                                <img src="img/soprts-3.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <div class="features-content d-flex flex-column">
+                                                                <p class="text-uppercase mb-2">Hourse Riding</p>
+                                                                <a href="#" class="h6">Galloping to Greatness! Jockey and Horse Claim Championship Title.</a>
+                                                                <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="row g-4 align-items-center">
+                                                        <div class="col-5">
+                                                            <div class="overflow-hidden rounded">
+                                                                <img src="img/sports-4.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <div class="features-content d-flex flex-column">
+                                                                <p class="text-uppercase mb-2">Tennis</p>
+                                                                <a href="#" class="h6">Grand Slam Glory! Rising Star Stuns the World with Historic Win.</a>
+                                                                <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 19, 2024</small>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="row g-4 align-items-center">
+                                                        <div class="col-5">
+                                                            <div class="overflow-hidden rounded">
+                                                                <img src="img/sports-5.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <div class="features-content d-flex flex-column">
+                                                                <p class="text-uppercase mb-2">Mountain Climbing</p>
+                                                                <a href="#" class="h6"> Summit Success! Climbers Conquer One of the World’s Toughest Peaks!.</a>
+                                                                <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="row g-4 align-items-center">
+                                                        <div class="col-5">
+                                                            <div class="overflow-hidden rounded">
+                                                                <img src="img/sports-6.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <div class="features-content d-flex flex-column">
+                                                                <p class="text-uppercase mb-2">Swimming</p>
+                                                                <a href="#" class="h6">Breaking Records! Swimmer Shatters the 100m Freestyle Mark.</a>
+                                                                <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="tab-2" class="tab-pane fade show p-0">
+                                    <div class="row g-4">
+                                        <div class="col-lg-8">
+                                            <div class="position-relative rounded overflow-hidden">
+                                                <img src="img/magzine-1.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                <div class="position-absolute text-white px-4 py-2 bg-primary rounded" style="top: 20px; right: 20px;">                                              
+                                                    Magazine
+                                                </div>
+                                            </div>
+                                            <div class="my-3">
+                                                <a href="#" class="h4">Escalating Global Tensions: Ongoing Conflicts Reshape Geopolitical Landscape.</a>
+                                            </div>
+                                            <p class="mt-4">The world is witnessing heightened tensions as multiple conflicts continue to unfold across different regions. The ongoing war between Russia and Ukraine has entered a critical phase, with fresh offensives and increasing international sanctions. Meanwhile, tensions in the Middle East have escalated, with renewed clashes between Israel and Palestine, drawing global concern over civilian casualties. In Africa, armed conflicts in Sudan and the Democratic Republic of Congo have led to humanitarian crises, displacing thousands. As world leaders push for diplomatic resolutions, fears of further escalation persist, making global peace efforts more urgent than ever.
+                                            </p>
+                                            <div class="d-flex justify-content-between">
+                                                <a href="#" class="text-dark link-hover me-3"><i class="fa fa-clock"></i> 06 minute read</a>
+                                                <a href="#" class="text-dark link-hover me-3"><i class="fa fa-eye"></i> 3.5k Views</a>
+                                                <a href="#" class="text-dark link-hover me-3"><i class="fa fa-comment-dots"></i> 05 Comment</a>
+                                                <a href="#" class="text-dark link-hover"><i class="fa fa-arrow-up"></i> 1.5k Share</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="row g-4">
+                                                <div class="col-12">
+                                                    <div class="row g-4 align-items-center">
+                                                        <div class="col-5">
+                                                            <div class="overflow-hidden rounded">
+                                                                <img src="img/magzine-2.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <div class="features-content d-flex flex-column">
+                                                                <p class="text-uppercase mb-2">President elections</p>
+                                                                <a href="#" class="h6">Kirsty Coventry, the newly elected President of the International ...</a>
+                                                                <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="row g-4 align-items-center">
+                                                        <div class="col-5">
+                                                            <div class="overflow-hidden rounded">
+                                                                <img src="img/magzine-3.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <div class="features-content d-flex flex-column">
+                                                                <p class="text-uppercase mb-2">Share Market</p>
+                                                                <a href="#" class="h6">Donald Trump's tariffs have significantly impacted global markets...</a>
+                                                                <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="row g-4 align-items-center">
+                                                        <div class="col-5">
+                                                            <div class="overflow-hidden rounded">
+                                                                <img src="img/magzine-4.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <div class="features-content d-flex flex-column">
+                                                                <p class="text-uppercase mb-2">Death</p>
+                                                                <a href="#" class="h6">Legendary boxing writer Colin Hart, known as "The Greatest," passed away at age 89..</a>
+                                                                <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="row g-4 align-items-center">
+                                                        <div class="col-5">
+                                                            <div class="overflow-hidden rounded">
+                                                                <img src="img/magzine-5.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <div class="features-content d-flex flex-column">
+                                                                <p class="text-uppercase mb-2">World Cup</p>
+                                                                <a href="#" class="h6">FIFA is aggressively promoting the expanded Club World Cup..</a>
+                                                                <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="row g-4 align-items-center">
+                                                        <div class="col-5">
+                                                            <div class="overflow-hidden rounded">
+                                                                <img src="img/magzine-6.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <div class="features-content d-flex flex-column">
+                                                                <p class="text-uppercase mb-2">Meeting</p>
+                                                                <a href="#" class="h6">The recent meeting between Trump and Irish MMA fighter.</a>
+                                                                <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="tab-3" class="tab-pane fade show p-0">
+                                    <div class="row g-4">
+                                        <div class="col-lg-8">
+                                            <div class="position-relative rounded overflow-hidden">
+                                                <img src="img/politics-1.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                <div class="position-absolute text-white px-4 py-2 bg-primary rounded" style="top: 20px; right: 20px;">                                              
+                                                    Politics
+                                                </div>
+                                            </div>
+                                            <div class="my-3">
+                                                <a href="#" class="h4">Students Rally for Climate Action, Demand Immediate Government Measures</a>
+                                            </div>
+                                            <p class="mt-4">Thousands of students took to the streets today in a massive rally demanding urgent action against climate change. Organized by youth-led environmental groups, the protest saw students carrying banners, chanting slogans, and urging policymakers to implement stricter environmental regulations. The rally, held in major cities across the country, highlighted concerns over deforestation, pollution, and global warming. "Our future is at stake, and we won’t stay silent," said one student activist. The movement has gained widespread support from environmentalists and educators, emphasizing the power of youth in shaping global climate policies...
+                                            </p>
+                                            <div class="d-flex justify-content-between">
+                                                <a href="#" class="text-dark link-hover me-3"><i class="fa fa-clock"></i> 06 minute read</a>
+                                                <a href="#" class="text-dark link-hover me-3"><i class="fa fa-eye"></i> 3.5k Views</a>
+                                                <a href="#" class="text-dark link-hover me-3"><i class="fa fa-comment-dots"></i> 05 Comment</a>
+                                                <a href="#" class="text-dark link-hover"><i class="fa fa-arrow-up"></i> 1.5k Share</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="row g-4">
+                                                <div class="col-12">
+                                                    <div class="row g-4 align-items-center">
+                                                        <div class="col-5">
+                                                            <div class="overflow-hidden rounded">
+                                                                <img src="img/politics-2.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <div class="features-content d-flex flex-column">
+                                                                <p class="text-uppercase mb-2">1990s Rally</p>
+                                                                <a href="#" class="h6">1990s Protest Wave: Citizens Rally for Reform and Social Change</a>
+                                                                <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="row g-4 align-items-center">
+                                                        <div class="col-5">
+                                                            <div class="overflow-hidden rounded">
+                                                                <img src="img/politics-3.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <div class="features-content d-flex flex-column">
+                                                                <p class="text-uppercase mb-2">Historic Victory</p>
+                                                                <a href="#" class="h6">Stefen Wins Presidential Debate with Powerful Performance</a>
+                                                                <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="row g-4 align-items-center">
+                                                        <div class="col-5">
+                                                            <div class="overflow-hidden rounded">
+                                                                <img src="img/politics-4.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <div class="features-content d-flex flex-column">
+                                                                <p class="text-uppercase mb-2">Honoring the Brave</p>
+                                                                <a href="#" class="h6"> Remembering the Sacrifices of Freedom Fighters.</a>
+                                                                <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="row g-4 align-items-center">
+                                                        <div class="col-5">
+                                                            <div class="overflow-hidden rounded">
+                                                                <img src="img/politics-5.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <div class="features-content d-flex flex-column">
+                                                                <p class="text-uppercase mb-2">Germany's Flag</p>
+                                                                <a href="#" class="h6"> A Symbol of Unity, History, and Strength.</a>
+                                                                <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="row g-4 align-items-center">
+                                                        <div class="col-5">
+                                                            <div class="overflow-hidden rounded">
+                                                                <img src="img/politics-6.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <div class="features-content d-flex flex-column">
+                                                                <p class="text-uppercase mb-2">People Protest</p>
+                                                                <a href="#" class="h6">Mass Protests Erupt as Citizens Demand Change and Justice.</a>
+                                                                <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="tab-4" class="tab-pane fade show p-0">
+                                    <div class="row g-4">
+                                        <div class="col-lg-8">
+                                            <div class="position-relative rounded overflow-hidden">
+                                                <img src="img/tech-1.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                <div class="position-absolute text-white px-4 py-2 bg-primary rounded" style="top: 20px; right: 20px;">                                              
+                                                    Technology
+                                                </div>
+                                            </div>
+                                            <div class="my-3">
+                                                <a href="#" class="h4">Humanoid Robot Breakthrough: AI-Powered Machine Now Walks, Talks, and Learns Like Humans.</a>
+                                            </div>
+                                            <p class="mt-4">In a major leap for robotics, engineers have unveiled a new AI-powered humanoid robot capable of walking, talking, and learning from its surroundings in real-time. Designed to assist in industries ranging from healthcare to customer service, the advanced robot mimics human expressions and adapts to social interactions. Experts say this breakthrough could revolutionize the way humans and machines coexist, bringing automation to a new level of intelligence and efficiency. While some hail it as the future of AI, others raise ethical concerns about the increasing role of robots in daily life.
+                                            </p>
+                                            <div class="d-flex justify-content-between">
+                                                <a href="#" class="text-dark link-hover me-3"><i class="fa fa-clock"></i> 06 minute read</a>
+                                                <a href="#" class="text-dark link-hover me-3"><i class="fa fa-eye"></i> 3.5k Views</a>
+                                                <a href="#" class="text-dark link-hover me-3"><i class="fa fa-comment-dots"></i> 05 Comment</a>
+                                                <a href="#" class="text-dark link-hover"><i class="fa fa-arrow-up"></i> 1.5k Share</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="row g-4">
+                                                <div class="col-12">
+                                                    <div class="row g-4 align-items-center">
+                                                        <div class="col-5">
+                                                            <div class="overflow-hidden rounded">
+                                                                <img src="img/tech-2.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <div class="features-content d-flex flex-column">
+                                                                <p class="text-uppercase mb-2">Cycle Scooters</p>
+                                                                <a href="#" class="h6"> The Future of Eco-Friendly Urban Commuting Gains Momentum</a>
+                                                                <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="row g-4 align-items-center">
+                                                        <div class="col-5">
+                                                            <div class="overflow-hidden rounded">
+                                                                <img src="img/tech-3.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <div class="features-content d-flex flex-column">
+                                                                <p class="text-uppercase mb-2">Embeded Systems</p>
+                                                                <a href="#" class="h6">New Revolution is goining on...</a>
+                                                                <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="row g-4 align-items-center">
+                                                        <div class="col-5">
+                                                            <div class="overflow-hidden rounded">
+                                                                <img src="img/tech-4.webp" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <div class="features-content d-flex flex-column">
+                                                                <p class="text-uppercase mb-2"> AIRWAY Technology</p>
+                                                                <a href="#" class="h6">Helicopter Technology Revolutionizing Emergency Response and Urban Mobility</a>
+                                                                <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="row g-4 align-items-center">
+                                                        <div class="col-5">
+                                                            <div class="overflow-hidden rounded">
+                                                                <img src="img/tech-5.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <div class="features-content d-flex flex-column">
+                                                                <p class="text-uppercase mb-2">Automobile Technology Unveiled</p>
+                                                                <a href="#" class="h6"> AI-Driven Cars Set to Redefine Transportation</a>
+                                                                <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="row g-4 align-items-center">
+                                                        <div class="col-5">
+                                                            <div class="overflow-hidden rounded">
+                                                                <img src="img/tech-6.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <div class="features-content d-flex flex-column">
+                                                                <p class="text-uppercase mb-2">The Digital Generation</p>
+                                                                <a href="#" class="h6"> How Technology is Shaping Children's Lives.</a>
+                                                                <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="tab-5" class="tab-pane fade show p-0">
+                                    <div class="row g-4">
+                                        <div class="col-lg-8">
+                                            <div class="position-relative rounded overflow-hidden">
+                                                <img src="img/fashion-1.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                <div class="position-absolute text-white px-4 py-2 bg-primary rounded" style="top: 20px; right: 20px;">                                              
+                                                    Fashion
+                                                </div>
+                                            </div>
+                                            <div class="my-3">
+                                                <a href="#" class="h4">Fashion Forward: AI and Sustainable Trends Redefine the Modeling Industry</a>
+                                            </div>
+                                            <p class="mt-4">The fashion industry is undergoing a major transformation as technology and sustainability take center stage in modeling and design. AI-powered virtual models are now gracing runways, while sustainable fabrics and eco-friendly production methods are revolutionizing fashion. Top brands are embracing digital fashion shows, reducing environmental impact, and creating inclusive styles for diverse audiences. Experts say these changes are setting new standards for the industry, blending innovation with sustainability to shape the future of fashion.
+                                            </p>
+                                            <div class="d-flex justify-content-between">
+                                                <a href="#" class="text-dark link-hover me-3"><i class="fa fa-clock"></i> 06 minute read</a>
+                                                <a href="#" class="text-dark link-hover me-3"><i class="fa fa-eye"></i> 3.5k Views</a>
+                                                <a href="#" class="text-dark link-hover me-3"><i class="fa fa-comment-dots"></i> 05 Comment</a>
+                                                <a href="#" class="text-dark link-hover"><i class="fa fa-arrow-up"></i> 1.5k Share</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="row g-4">
+                                                <div class="col-12">
+                                                    <div class="row g-4 align-items-center">
+                                                        <div class="col-5">
+                                                            <div class="overflow-hidden rounded">
+                                                                <img src="img/fashion-2.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <div class="features-content d-flex flex-column">
+                                                                <p class="text-uppercase mb-2">Hand bag</p>
+                                                                <a href="#" class="h6">Top Expensive bags made by diamonds</a>
+                                                                <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="row g-4 align-items-center">
+                                                        <div class="col-5">
+                                                            <div class="overflow-hidden rounded">
+                                                                <img src="img/fashion-3.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <div class="features-content d-flex flex-column">
+                                                                <p class="text-uppercase mb-2">modeling</p>
+                                                                <a href="#" class="h6">Top models Demand high Wages</a>
+                                                                <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="row g-4 align-items-center">
+                                                        <div class="col-5">
+                                                            <div class="overflow-hidden rounded">
+                                                                <img src="img/fashion-4.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <div class="features-content d-flex flex-column">
+                                                                <p class="text-uppercase mb-2">Fashion</p>
+                                                                <a href="#" class="h6">day by day the fashion Field in upgrading </a>
+                                                                <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="row g-4 align-items-center">
+                                                        <div class="col-5">
+                                                            <div class="overflow-hidden rounded">
+                                                                <img src="img/fashion-5.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <div class="features-content d-flex flex-column">
+                                                                <p class="text-uppercase mb-2">Clothes</p>
+                                                                <a href="#" class="h6">Luxury Prices Soar: High Demand and Scarcity Drive Costs Up.</a>
+                                                                <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="row g-4 align-items-center">
+                                                        <div class="col-5">
+                                                            <div class="overflow-hidden rounded">
+                                                                <img src="img/fashion-6.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <div class="features-content d-flex flex-column">
+                                                                <p class="text-uppercase mb-2">Footwear</p>
+                                                                <a href="#" class="h6">Footwear demand is high all the year ..</a>
+                                                                <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border-bottom mb-4">
+                                <h2 class="my-4">Most Views News</h2>
+                            </div>
+                            <div class="whats-carousel owl-carousel">
+                                <div class="latest-news-item">
+                                    <div class="bg-light rounded">
+                                        <div class="rounded-top overflow-hidden">
+                                            <img src="img/news-7.jpg" class="img-zoomin img-fluid rounded-top w-100" alt="">
+                                        </div>
+                                        <div class="d-flex flex-column p-4">
+                                            <a href="#" class="h4">Automobile Prices Surge: Rising Demand and Supply Chain Woes Shake the Car Market,</a>
+                                            <div class="d-flex justify-content-between">
+                                                <a href="#" class="small text-body link-hover">by Gayathri Devi</a>
+                                                <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Aug 14 , 2024</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="whats-item">
+                                    <div class="bg-light rounded">
+                                        <div class="rounded-top overflow-hidden">
+                                            <img src="img/news-6.jpg" class="img-zoomin img-fluid rounded-top w-100" alt="">
+                                        </div>
+                                        <div class="d-flex flex-column p-4">
+                                            <a href="#" class="h4">Statue of Liberty: Enduring Symbol of Freedom Continues to Inspire Millions,</a>
+                                            <div class="d-flex justify-content-between">
+                                                <a href="#" class="small text-body link-hover">by Gopi krishna</a>
+                                                <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i>Jan 9, 2025</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="whats-item">
+                                    <div class="bg-light rounded">
+                                        <div class="rounded-top overflow-hidden">
+                                            <img src="img/news-3.jpg" class="img-zoomin img-fluid rounded-top w-100" alt="">
+                                        </div>
+                                        <div class="d-flex flex-column p-4">
+                                            <a href="#" class="h4">How to Apply internships Online</a>
+                                            <div class="d-flex justify-content-between">
+                                                <a href="#" class="small text-body link-hover">by Sravani Naidu</a>
+                                                <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Sept 9, 2024</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="whats-item">
+                                    <div class="bg-light rounded">
+                                        <div class="rounded-top overflow-hidden">
+                                            <img src="img/news-4.jpg" class="img-zoomin img-fluid rounded-top w-100" alt="">
+                                        </div>
+                                        <div class="d-flex flex-column p-4">
+                                            <a href="#" class="h4">Wind and solar surpass coal in U.S. power generation for the first time,</a>
+                                            <div class="d-flex justify-content-between">
+                                                <a href="#" class="small text-body link-hover">by John Tejas</a>
+                                                <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Oct 11, 2024</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="whats-item">
+                                    <div class="bg-light rounded">
+                                        <div class="rounded-top overflow-hidden">
+                                            <img src="img/news-5.jpg" class="img-zoomin img-fluid rounded-top w-100" alt="">
+                                        </div>
+                                        <div class="d-flex flex-column p-4">
+                                            <a href="#" class="h4">Master Sculptors Redefine Art: Stunning Creations Shape the Future of Sculpture,</a>
+                                            <div class="d-flex justify-content-between">
+                                                <a href="#" class="small text-body link-hover">by Willium Denen</a>
+                                                <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Mar 23, 2024</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-5 lifestyle">
+                                <div class="border-bottom mb-4">
+                                    <h1 class="mb-4">Life Style</h1>
+                                </div>
+                                <div class="row g-4">
+                                    <div class="col-lg-6">
+                                        <div class="lifestyle-item rounded">
+                                            <img src="img/lifestyle-1.jpg" class="img-fluid w-100 rounded" alt="">
+                                            <div class="lifestyle-content">
+                                               <div class="mt-auto">
+                                                    <a href="#" class="h4 text-white link-hover">A good lifestyle comes from healthy habits, positive thinking, and strong relationships,</a>
+                                                    <div class="d-flex justify-content-between mt-4">
+                                                        <a href="#" class="small text-white link-hover">By Ken Smith</a>
+                                                        <small class="text-white d-block"><i class="fas fa-calendar-alt me-1"></i> Dec 9, 2024</small>
+                                                    </div>
+                                               </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="lifestyle-item rounded">
+                                            <img src="img/lifestyle-2.jpg" class="img-fluid w-100 rounded" alt="">
+                                            <div class="lifestyle-content">
+                                               <div class="mt-auto">
+                                                    <a href="#" class="h4 text-white link-hover">Staying active, eating well, and managing stress lead to a happier life,</a>
+                                                    <div class="d-flex justify-content-between mt-4">
+                                                        <a href="#" class="small text-white link-hover">By Deliver john</a>
+                                                        <small class="text-white d-block"><i class="fas fa-calendar-alt me-1"></i> Oct 4, 2024</small>
+                                                    </div>
+                                               </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-xl-3">
+                            <div class="row g-4">
+                                <div class="col-12">
+                                    <div class="p-3 rounded border">
+                                        <h4 class="mb-4">Stay Connected</h4>
+                                        <div class="row g-4">
+                                            <div class="col-12">
+                                                <a href="#" class="w-100 rounded btn btn-primary d-flex align-items-center p-3 mb-2">
+                                                    <i class="fab fa-facebook-f btn btn-light btn-square rounded-circle me-3"></i>
+                                                    <span class="text-white">13,977 Fans</span>
+                                                </a>
+                                                <a href="#" class="w-100 rounded btn btn-danger d-flex align-items-center p-3 mb-2">
+                                                    <i class="fab fa-twitter btn btn-light btn-square rounded-circle me-3"></i>
+                                                    <span class="text-white">21,798 Follower</span>
+                                                </a>
+                                                <a href="#" class="w-100 rounded btn btn-warning d-flex align-items-center p-3 mb-2">
+                                                    <i class="fab fa-youtube btn btn-light btn-square rounded-circle me-3"></i>
+                                                    <span class="text-white">7,999 Subscriber</span>
+                                                </a>
+                                                <a href="#" class="w-100 rounded btn btn-dark d-flex align-items-center p-3 mb-2">
+                                                    <i class="fab fa-instagram btn btn-light btn-square rounded-circle me-3"></i>
+                                                    <span class="text-white">19,764 Follower</span>
+                                                </a>
+                                                <a href="#" class="w-100 rounded btn btn-secondary d-flex align-items-center p-3 mb-2">
+                                                    <i class="bi-cloud btn btn-light btn-square rounded-circle me-3"></i>
+                                                    <span class="text-white">31,999 Subscriber</span>
+                                                </a>
+                                                <a href="#" class="w-100 rounded btn btn-warning d-flex align-items-center p-3 mb-4">
+                                                    <i class="fab fa-dribbble btn btn-light btn-square rounded-circle me-3"></i>
+                                                    <span class="text-white">37,999 Subscriber</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <h4 class="my-4">Popular News</h4>
+                                        <div class="row g-4">
+                                            <div class="col-12">
+                                                <div class="row g-4 align-items-center features-item">
+                                                    <div class="col-4">
+                                                        <div class="rounded-circle position-relative">
+                                                            <div class="overflow-hidden rounded-circle">
+                                                                <img src="img/features-sports-1.jpg" class="img-zoomin img-fluid rounded-circle w-100" alt="">
+                                                            </div>
+                                                            <span class="rounded-circle border border-2 border-white bg-primary btn-sm-square text-white position-absolute" style="top: 10%; right: -10px;">3</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <div class="features-content d-flex flex-column">
+                                                            <p class="text-uppercase mb-2">Sports</p>
+                                                            <a href="#" class="h6">
+                                                                Thrilling movements in Sports
+                                                            </a>
+                                                            <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> December 9, 2024</small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="row g-4 align-items-center features-item">
+                                                    <div class="col-4">
+                                                        <div class="rounded-circle position-relative">
+                                                            <div class="overflow-hidden rounded-circle">
+                                                                <img src="img/features-technology.jpg" class="img-zoomin img-fluid rounded-circle w-100" alt="">
+                                                            </div>
+                                                            <span class="rounded-circle border border-2 border-white bg-primary btn-sm-square text-white position-absolute" style="top: 10%; right: -10px;">3</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <div class="features-content d-flex flex-column">
+                                                            <p class="text-uppercase mb-2">Technology</p>
+                                                            <a href="#" class="h6">
+                                                                Technology Shaping Our Future.
+                                                            </a>
+                                                            <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> December 9, 2024</small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="row g-4 align-items-center features-item">
+                                                    <div class="col-4">
+                                                        <div class="rounded-circle position-relative">
+                                                            <div class="overflow-hidden rounded-circle">
+                                                                <img src="img/features-fashion.jpg" class="img-zoomin img-fluid rounded-circle w-100" alt="">
+                                                            </div>
+                                                            <span class="rounded-circle border border-2 border-white bg-primary btn-sm-square text-white position-absolute" style="top: 10%; right: -10px;">3</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <div class="features-content d-flex flex-column">
+                                                            <p class="text-uppercase mb-2">Fashion</p>
+                                                            <a href="#" class="h6">
+                                                                Fashion Trends Redefining Styles.
+                                                            </a>
+                                                            <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> December 9, 2024</small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="row g-4 align-items-center features-item">
+                                                    <div class="col-4">
+                                                        <div class="rounded-circle position-relative">
+                                                            <div class="overflow-hidden rounded-circle">
+                                                                <img src="img/features-life-style.jpg" class="img-zoomin img-fluid rounded-circle w-100" alt="">
+                                                            </div>
+                                                            <span class="rounded-circle border border-2 border-white bg-primary btn-sm-square text-white position-absolute" style="top: 10%; right: -10px;">3</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <div class="features-content d-flex flex-column">
+                                                            <p class="text-uppercase mb-2">Life Style</p>
+                                                            <a href="#" class="h6">
+                                                                Healthy Lifestyle For All.
+                                                            </a>
+                                                            <small class="text-body d-block"><i class="fas fa-calendar-alt me-1"></i> Aug 13, 2024</small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <a href="#" class="link-hover btn border border-primary rounded-pill text-dark w-100 py-3 mb-4">View More</a>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="border-bottom my-3 pb-3">
+                                                    <h4 class="mb-0">Trending Tags</h4>
+                                                </div>
+                                                <ul class="nav nav-pills d-inline-flex text-center mb-4">
+                                                    <li class="nav-item mb-3">
+                                                        <a class="d-flex py-2 bg-light rounded-pill me-2" href="#">
+                                                            <span class="text-dark link-hover" style="width: 90px;">Lifestyle</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item mb-3">
+                                                        <a class="d-flex py-2 bg-light rounded-pill me-2" href="#">
+                                                            <span class="text-dark link-hover" style="width: 90px;">Sports</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item mb-3">
+                                                        <a class="d-flex py-2 bg-light rounded-pill me-2" href="#">
+                                                            <span class="text-dark link-hover" style="width: 90px;">Politics</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item mb-3">
+                                                        <a class="d-flex py-2 bg-light rounded-pill me-2" href="#">
+                                                            <span class="text-dark link-hover" style="width: 90px;">Magazine</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item mb-3">
+                                                        <a class="d-flex py-2 bg-light rounded-pill me-2" href="#">
+                                                            <span class="text-dark link-hover" style="width: 90px;">Game</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item mb-3">
+                                                        <a class="d-flex py-2 bg-light rounded-pill me-2" href="#">
+                                                            <span class="text-dark link-hover" style="width: 90px;">Movie</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item mb-3">
+                                                        <a class="d-flex py-2 bg-light rounded-pill me-2" href="#">
+                                                            <span class="text-dark link-hover" style="width: 90px;">Travel</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item mb-3">
+                                                        <a class="d-flex py-2 bg-light rounded-pill me-2" href="#">
+                                                            <span class="text-dark link-hover" style="width: 90px;">World</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="position-relative banner-2">
+                                                    <img src="img/banner-2.jpg" class="img-fluid w-100 rounded" alt="">
+                                                    <div class="text-center banner-content-2">
+                                                        <h6 class="mb-2">The Most Populer</h6>
+                                                        <p class="text-white mb-2">News & Magazine NewsWave Theme</p>
+                                                        <a href="#" class="btn btn-primary text-white px-4">Shop Now</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Most Populer News End -->
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark footer py-5">
+            <div class="container py-5">
+                <div class="pb-4 mb-4" style="border-bottom: 1px solid rgba(255, 255, 255, 0.08);">
+                    <div class="row g-4">
+                        <div class="col-lg-3">
+                            <a href="#" class="d-flex flex-column flex-wrap">
+                                <p class="text-white mb-0 display-6">NewsWave</p>
+                                <small class="text-light" style="letter-spacing: 11px; line-height: 0;">Newspaper</small>
+                            </a>
+                        </div>
+                        <div class="col-lg-9">
+                            <div class="d-flex position-relative rounded-pill overflow-hidden">
+                                <input class="form-control border-0 w-100 py-3 rounded-pill" type="email" placeholder="example@gmail.com">
+                                <button type="submit" class="btn btn-primary border-0 py-3 px-5 rounded-pill text-white position-absolute" style="top: 0; right: 0;">Subscribe Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-5">
+                    <div class="col-lg-6 col-xl-3">
+                        <div class="footer-item-1">
+                            <h4 class="mb-4 text-white">Get In Touch</h4>
+                            <p class="text-secondary line-h">Address: <span class="text-white">123 Streat,Hyderabad</span></p>
+                            <p class="text-secondary line-h">Email: <span class="text-white">NewsWave@gmail.com</span></p>
+                            <p class="text-secondary line-h">Phone: <span class="text-white">+91 XXXXXXXXXX</span></p>
+                            <div class="d-flex line-h">
+                                <a class="btn btn-light me-2 btn-md-square rounded-circle" href=""><i class="fab fa-twitter text-dark"></i></a>
+                                <a class="btn btn-light me-2 btn-md-square rounded-circle" href=""><i class="fab fa-facebook-f text-dark"></i></a>
+                                <a class="btn btn-light me-2 btn-md-square rounded-circle" href=""><i class="fab fa-youtube text-dark"></i></a>
+                                <a class="btn btn-light btn-md-square rounded-circle" href=""><i class="fab fa-linkedin-in text-dark"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-3">
+                        <div class="footer-item-2">
+                            <div class="d-flex flex-column mb-4">
+                                <h4 class="mb-4 text-white">Recent Posts</h4>
+                                <a href="#">
+                                    <div class="d-flex align-items-center">
+                                        <div class="rounded-circle border border-2 border-primary overflow-hidden">
+                                            <img src="img/footer-1.jpg" class="img-zoomin img-fluid rounded-circle w-100" alt="">
+                                        </div>
+                                        <div class="d-flex flex-column ps-4">
+                                            <p class="text-uppercase text-white mb-3">Life Style</p>
+                                            <a href="#" class="h6 text-white">
+                                                Balance, health, happiness, growth..
+                                            </a>
+                                            <small class="text-white d-block"><i class="fas fa-calendar-alt me-1"></i> april 26, 2024</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <a href="#">
+                                    <div class="d-flex align-items-center">
+                                        <div class="rounded-circle border border-2 border-primary overflow-hidden">
+                                            <img src="img/footer-2.jpg" class="img-zoominimg-fluid rounded-circle w-100" alt="">
+                                        </div>
+                                        <div class="d-flex flex-column ps-4">
+                                            <p class="text-uppercase text-white mb-3">Sports</p>
+                                            <a href="#" class="h6 text-white">
+                                                Fitness, discipline, teamwork, strength..
+                                            </a>
+                                            <small class="text-white d-block"><i class="fas fa-calendar-alt me-1"></i> aug 9, 2024</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-3">
+                        <div class="d-flex flex-column text-start footer-item-3">
+                            <h4 class="mb-4 text-white">Categories</h4>
+                            <a class="btn-link text-white" href=""><i class="fas fa-angle-right text-white me-2"></i> Sports</a>
+                            <a class="btn-link text-white" href=""><i class="fas fa-angle-right text-white me-2"></i> Magazine</a>
+                            <a class="btn-link text-white" href=""><i class="fas fa-angle-right text-white me-2"></i> Lifestyle</a>
+                            <a class="btn-link text-white" href=""><i class="fas fa-angle-right text-white me-2"></i> Politician</a>
+                            <a class="btn-link text-white" href=""><i class="fas fa-angle-right text-white me-2"></i> Technology</a>
+                            <a class="btn-link text-white" href=""><i class="fas fa-angle-right text-white me-2"></i> Intertainment</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-3">
+                        <div class="footer-item-4">
+                            <h4 class="mb-4 text-white">Our Posts/trends</h4>
+                            <div class="row g-2">
+                                <div class="col-4">
+                                    <div class="rounded overflow-hidden">
+                                        <img src="img/footer-1.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                    </div>
+                               </div>
+                               <div class="col-4">
+                                    <div class="rounded overflow-hidden">
+                                        <img src="img/footer-2.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                    </div>
+                               </div>
+                                <div class="col-4">
+                                    <div class="rounded overflow-hidden">
+                                        <img src="img/footer-3.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                    </div>
+                               </div>
+                                <div class="col-4">
+                                    <div class="rounded overflow-hidden">
+                                        <img src="img/footer-4.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                    </div>
+                               </div>
+                                <div class="col-4">
+                                    <div class="rounded overflow-hidden">
+                                        <img src="img/footer-5.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                    </div>
+                               </div>
+                               <div class="col-4">
+                                <div class="rounded overflow-hidden">
+                                    <img src="img/footer-6.jpg" class="img-zoomin img-fluid rounded w-100" alt="">
+                                </div>
+                           </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright bg-dark py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>NewsWave</a>, All right reserved.</span>
+                    </div>
+                    <div class="col-md-6 my-auto text-center text-md-end text-white">
+                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                        Designed By <a class="border-bottom" href="">Siva Susmitha Nowdu</a> Distributed By <a href="">Susmitha</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary border-2 border-white rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+
+</html>

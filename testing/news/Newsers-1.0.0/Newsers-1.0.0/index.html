@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In & Sign Up</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            width: 400px;
+            text-align: center;
+        }
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        input {
+            width: calc(100% - 24px);
+            padding: 14px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        button {
+            width: 100%;
+            padding: 14px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        .forgot, .toggle {
+            display: block;
+            margin-top: 15px;
+            font-size: 14px;
+            color: #007bff;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .forgot:hover, .toggle:hover {
+            text-decoration: underline;
+        }
+        .error-message {  /* Added for error display */
+            color: red;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 id="formTitle">Sign In</h2>
+        <form id="authForm">
+            <input type="email" id="email" placeholder="Enter your Email" required>
+            <input type="password" id="password" placeholder="Enter your Password" required>
+            <input type="text" id="nameField" placeholder="Full Name" style="display: none;" required>
+            <button type="submit" id="submitButton">Sign In</button>
+            <a href="#" class="forgot" id="forgotPassword">Forgot Password?</a>
+            <a class="toggle" id="toggleForm">Don't have an account? Sign Up</a>
+            <div id="errorMessage" class="error-message"></div> <!-- Error message display -->
+        </form>
+    </div>
+    <script>
+        const formTitle = document.getElementById("formTitle");
+        const authForm = document.getElementById("authForm");
+        const submitButton = document.getElementById("submitButton");
+        const toggleForm = document.getElementById("toggleForm");
+        const nameField = document.getElementById("nameField");
+        const forgotPassword = document.getElementById("forgotPassword");
+        const emailField = document.getElementById("email");
+        const passwordField = document.getElementById("password");
+        const errorMessage = document.getElementById("errorMessage");
+
+        toggleForm.addEventListener("click", () => {
+            if (submitButton.innerText === "Sign In") {
+                formTitle.innerText = "Sign Up";
+                submitButton.innerText = "Sign Up";
+                toggleForm.innerText = "Already have an account? Sign In";
+                nameField.style.display = "block";
+                forgotPassword.style.display = "none";
+            } else {
+                formTitle.innerText = "Sign In";
+                submitButton.innerText = "Sign In";
+                toggleForm.innerText = "Don't have an account? Sign Up";
+                nameField.style.display = "none";
+                forgotPassword.style.display = "block";
+            }
+        });
+
+        authForm.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            const email = emailField.value;
+            const password = passwordField.value;
+
+            // **INSECURE: Replace with proper server-side authentication!**
+            if (email === 'test@example.com' && password === 'password') {
+                localStorage.setItem('isLoggedIn', 'true');
+                window.location.href = 'index.html'; // Redirect on "success"
+            } else {
+                errorMessage.textContent = "Invalid email or password."; //Display error message
+            }
+        });
+        document.getElementById("submitButton").onclick = function(){
+            window.location.href ="home.html";
+        };
+        
+    </script>
+</body>
+</html>
